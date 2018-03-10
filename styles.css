@@ -12,6 +12,7 @@
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
+  formtarget: _blank;
 }
 
 .fa:hover {
