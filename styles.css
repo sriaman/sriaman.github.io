@@ -1,3 +1,136 @@
+html, body {
+  background-color: rgb(105, 136, 136);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  text-align: center;
+  height: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: all .8s;
+}
+
+a:hover {
+  color: #b8ccf3;
+  font-size: 130%;
+}
+
+#navbar a:hover {
+  color: #061f50;
+  font-size: 200%;
+}
+
+h1 {
+  color: #cfe4e4;
+  font-family: 'Shadows Into Light', cursive;
+  letter-spacing: 1.6px;
+}
+
+h2 {
+  color:  #002222;
+  font-family: 'Shadows Into Light', cursive;
+  letter-spacing: 1.2px;
+}
+
+li {
+  list-style-type: none;
+  margin: 1% 30px;
+}
+
+nav {
+  background-color: rgb(2, 32, 32);
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#profile-link {
+  padding: 1%;
+}
+
+.home-project-section,
+.project-section,
+.contact-links {
+  display: grid;
+  grid-gap: 2%;
+  grid-template-columns: repeat(2, 25%);
+  align-items: center;
+  justify-items: center;
+  place-content: center;
+  margin: 2%;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1%;
+  padding: auto;
+  width: 100%;
+}
+
+.project-tile p {
+  margin-left: 5%;
+  
+}
+
+.project-section img, .home-project-section img {
+  border-radius: 10px;
+  max-height: 50%;
+  max-width: 100%;
+}
+
+#contact {
+  height: 100vh;
+}
+
+#projects {
+  margin-bottom: 15rem;
+}
+
+#products {
+  max-width: 80%;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 60%;
+    height: 100%;
+}
+
+#welcome-section h1 {
+    align-self: center;
+}
+
+#welcome-section img {
+  border-radius: 5px;
+    align-self: center;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 500px) {
+  .project-section, .contact-links {
+    grid-template-columns: repeat(3, 20%);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .project-section, .contact-links {
+    grid-template-columns: 20% 20% 20% 20%;
+  }
+}
+
+
+
 .image {
 border-radius: 50%;
 }
@@ -47,11 +180,7 @@ color:orange;}
     text-align: center;
 }
 
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-    text-align: center;
-}
+
 
 .fa-instagram {
   background: #125688;
